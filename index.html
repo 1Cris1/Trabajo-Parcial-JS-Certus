@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cabecera">
+            <h2>Registro</h2>
+        </div>
+        <form id="formulario" action="procesar.php" method="post">
+
+            <div class="form-control">
+                <label for="usuario">Nombre de usuario</label>
+                <input id="usuario" type="text" name="username" placeholder="Ingrese su nombre">
+                <p class="error" id="usernameError"></p>                
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="Ingrese su email">
+                <p class="error" id="emailError"></p>                
+            </div>
+
+            <div class="form-control">
+                <label for="direccion">Dirección</label>
+                <input id="direccion" type="text" name="direccion" placeholder="Ingrese su direccion">
+                <p class="error" id="direccionError"></p>                
+            </div>
+
+            <div class="form-control">
+                <label for="celular">Número de Celular</label>
+                <input id="celular" type="tel" name="celular" placeholder="Ingrese su numero">
+                <p class="error" id="celularError"></p>                
+            </div>
+
+            <div class="form-control">
+                <label for="pass">Password</label>
+                <input id="pass" type="password" name="password" placeholder="Ingrese su contraseña">
+                <p class="error" id="passwordError"></p>                
+            </div>
+
+            <div class="form-control">
+                <label for="passConfirma">Confirmar Password</label>
+                <input id="passConfirma" type="password" name="confirmPassword" placeholder="Confirma tu contraseña">
+                <p class="error" id="confirmPasswordError"></p>                
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
